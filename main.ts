@@ -9,4 +9,5 @@ import {Component, View, bootstrap} from 'angular2/angular2';
 })
 class AppComponent {
 }
+
 bootstrap(AppComponent);
