@@ -11,22 +11,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 /// <reference path="typings/angular2/angular2.d.ts" />
 var angular2_1 = require('angular2/angular2');
-var show_properties_1 = require('./show-properties');
-var AppComponent = (function () {
-    function AppComponent() {
+var DisplayComponent = (function () {
+    function DisplayComponent() {
+        this.myName = "Alice";
     }
-    AppComponent = __decorate([
+    DisplayComponent = __decorate([
         angular2_1.Component({
-            selector: 'my-app'
+            selector: 'display'
         }),
         angular2_1.View({
-            templateUrl: './layout.html',
-            directives: [
-                show_properties_1.DisplayComponent
-            ]
+            template: "\n   <p>My name: {{ myName }}</p>\n  "
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], DisplayComponent);
+    return DisplayComponent;
 })();
-angular2_1.bootstrap(AppComponent);
+exports.DisplayComponent = DisplayComponent;
