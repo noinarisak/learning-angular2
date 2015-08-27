@@ -5,12 +5,14 @@ import {DisplayComponent} from './show-properties';
 @Component({
   selector: 'my-app'
 })
+
 @View({
   templateUrl: './layout.html',
   directives: [
     DisplayComponent
   ]
 })
+
 class AppComponent {
 }
 
